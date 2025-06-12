@@ -1,4 +1,5 @@
 const url = 'https://api.github.com/users';
+import { use } from 'react';
 import { useState, useEffect } from 'react';
 const User = (user) => {
   return <div className='user'>
@@ -18,7 +19,13 @@ const FetchData = () => {
     };
 };
 
-const [users, setUsers] = useState(retrieveData());
+const [users, setUsers] = useState([]);
+useEffect(() => {
+  const usersArray = retrieveData(); 
+  setUsers(usersArray)
+}, [])
+
+
 const renderedUsers = users.map((user) => {
   return <User key={user.id} {...user} />;
 }
