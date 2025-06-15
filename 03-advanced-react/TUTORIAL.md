@@ -1687,7 +1687,7 @@ const UserChallenge = () => {
     if (!name) return;
     // if value, setup new user and add to current users
     const fakeId = Date.now();
-    console.log(fakeId);
+    console.log(fakeId);<
     // const newUser = { id: fakeId, name: name };
     const newUser = { id: fakeId, name };
     const updatedUsers = [...users, newUser];
@@ -1698,7 +1698,7 @@ const UserChallenge = () => {
 
   const removeUser = (id) => {
     const updatedUsers = users.filter((person) => person.id !== id);
-    setUsers(updatedUsers);
+    setUsers(updatedUsers);\\
   };
   return (
     <div>
