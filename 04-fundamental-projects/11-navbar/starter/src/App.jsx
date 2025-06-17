@@ -1,4 +1,12 @@
+import { links, social } from './data';
+import logo from "./logo.svg";
+import Navbar from "./Navbar";
+
 const App = () => {
-  return <h2>Navbar Starter</h2>;
+  return (
+  <main>
+    <Navbar logo={logo} links={links}/>
+  </main>
+  )
 };
 export default App;
