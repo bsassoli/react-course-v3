@@ -1,14 +1,27 @@
-import { nanoid } from "nanoid";
-const Navbar = ({ logo, links }) => {
-  const renderedLinks = links.map((link) => <li key={link.id}>{link.text}</li>);
+const Navbar = ({ logo, links, social }) => {
+  const renderedSocialLinks = social.map((social) => {
+    return <li key={social.id}>
+      <a href={social.url}>
+        {social.icon}
+      </a>
+    </li>;
+  });
+  console.log(renderedSocialLinks);
+  const renderedLinks = links.map((link) =>
+    <li key={link.id}>
+      <a href={link.url}>{link.text}</a>
+    </li>);
   return (
     <nav>
-      <div className="nav-header">
-        <img src={logo} className="logo" alt="logo" />
+      <div className="nav-center">
+        <div className="nav-header">
+          <img className="logo" src={logo} alt="logo" />
+        </div>
+        <div className="links-container">
+          <ul className="links">{renderedLinks}</ul>
+        </div>
+        <ul className="social-icons">{renderedSocialLinks}</ul>
       </div>
-      <div className="link-container">
-        <ul className="links">{renderedLinks}</ul>
-    </div>
     </nav>
   );
 };
