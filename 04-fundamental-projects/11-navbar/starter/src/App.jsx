@@ -7,6 +7,7 @@ const App = () => {
   <main>
     <Navbar logo={logo} links={links} social={social}/>
   </main>
+  
   )
 };
 export default App;
