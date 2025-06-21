@@ -1,13 +1,8 @@
-import Starter from './tutorial/06-forms/starter/02-user-challenge.jsx';
-import Final from './tutorial/06-forms/final/02-user-challenge.jsx';
+import Navbar from "./tutorial/09-context-api/starter/Navbar"
+
 function App() {
   return (
-    <>
-      <h1>Starter</h1>
-      <Starter />
-      <h1>Final</h1>
-      <Final />
-    </>
+      <Navbar />
   );
 }
 

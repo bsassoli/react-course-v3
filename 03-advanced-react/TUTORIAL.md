@@ -2274,7 +2274,7 @@ final code in the repo under w-assets
 - create new VITE project
 
 ```sh
-npm create vite@latest global-context -- --template react
+d
 ```
 
 - install and start the project
