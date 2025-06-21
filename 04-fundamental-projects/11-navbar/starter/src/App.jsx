@@ -5,8 +5,9 @@ import Navbar from "./Navbar";
 const App = () => {
   return (
   <main>
-    <Navbar logo={logo} links={links}/>
+    <Navbar logo={logo} links={links} social={social}/>
   </main>
+  
   )
 };
 export default App;
