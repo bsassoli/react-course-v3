@@ -246,7 +246,7 @@ ul {
 }
 
 .title-underline {
-  background: var(--primary-100);
+  background: var(--primary-500);
   width: 7rem;
   height: 0.25rem;
   margin: 0 auto;
@@ -257,11 +257,13 @@ ul {
 PROJECT CSS 
 =============== 
 */
-
 body {
   background: var(--primary-500);
 }
-
+/* 
+============= 
+Navbar
+=============== 
 */
 
 nav {
@@ -345,7 +347,7 @@ Sidebar
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100%;q
   height: 100%;
   background: var(--white);
   /* toggle */
