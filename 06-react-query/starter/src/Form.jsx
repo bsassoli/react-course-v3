@@ -1,11 +1,17 @@
 import { useState } from 'react';
+import { useCreateTask } from './hooks';
 
 const Form = () => {
   const [newItemName, setNewItemName] = useState('');
+  const { createTask } = useCreateTask();
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    createTask(newItemName, {
+      onSuccess: () => setNewItemName("")
+    });
   };
+
   return (
     <form onSubmit={handleSubmit}>
       <h4>task bud</h4>
